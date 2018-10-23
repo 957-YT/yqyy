@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/notifi_tx"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/notifi_in"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/notifi_tx"
+        android:layout_marginStart="5dp">
+
+    <TextView
+        android:id="@+id/notifi_name"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        tools:text="歌名"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/notifi_author"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        tools:text="艺术家"
+        android:textSize="15sp"
+        android:textColor="@color/colorGray"
+        android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/notifi_left"
+        android:layout_width="33dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/notifi_in"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/left" />
+
+
+    <ImageView
+        android:id="@+id/notifi_pause"
+        android:layout_width="33dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_zt"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/notifi_left"
+        android:focusable="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+
+    <ImageView
+        android:id="@+id/notifi_next"
+        android:layout_width="33dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/right"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/notifi_pause"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+
+
+
+</RelativeLayout>

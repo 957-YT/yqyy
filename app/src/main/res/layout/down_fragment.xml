@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Github地址"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/selectableItemBackground"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSeekBar"/>
+
+    <TextView
+        android:id="@+id/used"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用提示"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSeekBar"/>
+
+    <TextView
+        android:id="@+id/cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除缓存"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSeekBar"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="关  于"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:focusable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorSeekBar"/>
+
+</LinearLayout>

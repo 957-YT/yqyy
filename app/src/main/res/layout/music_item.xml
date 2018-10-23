@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:descendantFocusability="blocksDescendants">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="歌名"
+        android:layout_marginLeft="15dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorGray"
+        android:singleLine="true"
+        android:ellipsize="end"
+        tools:text="作者"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/love"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_love"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_marginRight="10dp"
+        android:clickable="true"/>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
